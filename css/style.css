@@ -195,7 +195,7 @@ html {
 }
 
 footer {
-  background: black;
+  background: rgba(0, 0, 0, 0.911);
   color: white;
   padding: 9px 20px;
 }
@@ -230,4 +230,48 @@ footer {
 
 .justify{
   text-align: justify;
+}
+
+.footer--section {
+  font-family: "Bree Serif", serif;
+  color: white;
+  padding: 20px 4px;
+  text-align: center;
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-about, .footer-location, .footer-contact {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-about h3, .footer-location h3, .footer-contact h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-about p, .footer-location p, .footer-contact p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer hr{
+  color: white;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .footer-about, .footer-location, .footer-contact {
+    margin-bottom: 20px;
+  }
 }
